@@ -1,97 +1,127 @@
-# ✈️ Flight Delay Prediction using Machine Learning
+# Flight Delay Optimization Dashboard
 
-## 📝 Summary
-This project aims to predict flight delays using real-world data from the US Department of Transportation's On-Time Performance dataset. By leveraging features such as airline, scheduled departure time, origin/destination airport, and weather conditions, we built a supervised learning pipeline to classify whether a flight will be delayed.
+A modern, AI-powered flight operations management system built with React and TensorFlow.js that helps airlines optimize their operations and predict flight delays based on weather conditions.
 
-## 🧰 Tools Used
-- **Languages:** Python (v3.10+)
-- **Libraries:** pandas, NumPy, scikit-learn, matplotlib, seaborn, XGBoost, Streamlit
-- **Data Source:** Bureau of Transportation Statistics (BTS)
-- **Development:** Jupyter Notebook
+![Dashboard Overview](https://images.pexels.com/photos/46148/aircraft-jet-landing-cloud-46148.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)
 
-## 📊 Dataset Description
-- **Source:** [BTS On-Time Performance Data](https://transtats.bts.gov/OT_Delay/OT_DelayCause1.asp)
-- **Time Period:** January 2022 (sample, extendable)
-- **Features:**
-  - OP_CARRIER (airline)
-  - ORIGIN, DEST (airport codes)
-  - CRS_DEP_TIME, CRS_ARR_TIME (scheduled times)
-  - DEP_DELAY (target), ARR_DELAY
-  - DISTANCE, FL_DATE, FL_NUM
-  - [Planned] Weather data from NOAA API
+## Features
 
-## ✅ Results & Screenshots
-- Achieved ~81% accuracy with XGBoost on binary classification (delayed > 15 mins vs on-time)
-- Feature importance:
-  1. Scheduled Departure Time
-  2. Origin Airport
-  3. Carrier
+### 1. Real-time Flight Analytics Dashboard
+- Comprehensive overview of flight operations
+- Key metrics tracking (delays, weather impacts, critical delays)
+- Interactive charts and visualizations
+- Recent flight delay monitoring
 
-![confusion matrix](images/confusion_matrix.png)
-![feature importance](images/feature_importance.png)
+### 2. Weather Analysis
+- Real-time weather condition monitoring
+- Temperature, wind speed, precipitation tracking
+- Weather impact assessment
+- Automated weather alerts
 
-## 🚀 Future Improvements
-- 🔄 Extend to full BTS dataset (2019–2023)
-- 🌦 Integrate weather data from NOAA
-- 🛫 Add aircraft model and tail number data
-- 📈 Deploy interactive Streamlit dashboard
+### 3. Flight Scheduling
+- Interactive flight scheduling interface
+- Aircraft availability tracking
+- Maintenance schedule management
+- Real-time schedule updates
 
----
+### 4. AI-Powered Delay Predictions
+- Machine learning-based delay forecasting
+- TensorFlow.js integration
+- Weather impact analysis
+- Risk level assessment
 
-## 📁 Code Files
+### 5. Gate Simulation
+- Real-time gate allocation visualization
+- Interactive simulation controls
+- Efficiency metrics tracking
+- Event logging system
 
-### 1. `flight_delay_prediction.ipynb`
-> A complete Jupyter Notebook containing:
-- Data cleaning & preprocessing
-- Exploratory Data Analysis (EDA)
-- Label encoding & feature engineering
-- Model training (XGBoost, Logistic Regression, Random Forest)
-- Evaluation metrics (accuracy, precision, recall)
-- Feature importance visualizations
+## Screenshots
 
-### 2. `utils.py`
-> Utility functions for:
-- Time conversion
-- Plotting
-- Weather API preprocessing (planned)
+### Dashboard
+![Dashboard](https://images.pexels.com/photos/1098614/pexels-photo-1098614.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)
+*Main dashboard showing flight delay analytics*
 
-### 3. `app.py` *(Planned)*
-> Streamlit App that lets users:
-- Choose origin, destination, time
-- View live delay prediction based on model
+### Weather Analysis
+![Weather Analysis](https://images.pexels.com/photos/531756/pexels-photo-531756.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)
+*Weather analysis and impact assessment*
 
-### 4. `/images`
-> Contains:
-- Confusion matrix
-- Feature importance plot
+### Flight Scheduling
+![Flight Scheduling](https://images.pexels.com/photos/358319/pexels-photo-358319.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)
+*Flight scheduling and aircraft management interface*
 
----
+## Technology Stack
 
-## 📈 Visualization
-- EDA visualizations built using **Seaborn** & **Matplotlib**
-- Planned: interactive **Streamlit** visualizations (maps, predictions, dashboards)
+- **Frontend Framework**: React 18.3
+- **Styling**: Tailwind CSS
+- **Charts**: Recharts
+- **Icons**: Lucide React
+- **Machine Learning**: TensorFlow.js
+- **Animation**: Framer Motion
+- **Routing**: React Router DOM
+- **Date Handling**: date-fns
 
----
+## Getting Started
 
-## 📌 How to Run Locally
+1. Clone the repository
 ```bash
-# Clone repo
-$ git clone https://github.com/yourusername/flight-delay-prediction.git
-$ cd flight-delay-prediction
-
-# Install dependencies
-$ pip install -r requirements.txt
-
-# Run Jupyter Notebook
-$ jupyter notebook flight_delay_prediction.ipynb
-
-# [Planned] Launch Streamlit App
-$ streamlit run app.py
+git clone https://github.com/yourusername/flight-delay-optimization-dashboard.git
 ```
 
----
+2. Install dependencies
+```bash
+npm install
+```
 
-## 👨‍💻 Author
-**[Your Name]**  
-Aspiring Data Scientist with a passion for aviation and real-world impact through machine learning.
+3. Start the development server
+```bash
+npm run dev
+```
 
+4. Build for production
+```bash
+npm run build
+```
+
+## Project Structure
+
+```
+flight-delay-optimization-dashboard/
+├── src/
+│   ├── components/
+│   │   ├── dashboard/
+│   │   │   ├── DelaysByAirlineChart.tsx
+│   │   │   ├── DelaysByWeatherChart.tsx
+│   │   │   └── StatCard.tsx
+│   │   └── layout/
+│   │       ├── Header.tsx
+│   │       └── Sidebar.tsx
+│   ├── pages/
+│   │   ├── Dashboard.tsx
+│   │   ├── WeatherAnalysis.tsx
+│   │   ├── FlightScheduling.tsx
+│   │   ├── Predictions.tsx
+│   │   └── GateSimulation.tsx
+│   ├── App.tsx
+│   └── main.tsx
+├── public/
+└── package.json
+```
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- Weather data icons by [Lucide](https://lucide.dev)
+- UI components styled with [Tailwind CSS](https://tailwindcss.com)
+- Charts powered by [Recharts](https://recharts.org)
