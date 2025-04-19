@@ -110,19 +110,19 @@ flight-delay-optimization-dashboard/
 ## 📸 Project Screenshots
 
 ### Dashboard View
-![Dashboard](./downloads/dashboard.jpeg)
-![Dashboard](./downloads/dashboard-2.jpeg)
+![Dashboard](./images/dashboard.jpeg)
+![Dashboard](./images/dashboard-2.jpeg)
 
 
 This screenshot shows the main dashboard used to monitor real-time analytics.
 
 ### Flight Scheduling
-![User Profile](./downloads/flight-schedule.jpeg)
+![User Profile](./images/flight-schedule.jpeg)
 
 Displays the user’s detailed info and account settings.
 
 ### Delay Predictions
-![User Profile](./downloads/delay-predictions.jpeg)
+![User Profile](.images/delay-predictions.jpeg)
 
 Displays the user’s detailed info and account settings.
 ## Contributing
