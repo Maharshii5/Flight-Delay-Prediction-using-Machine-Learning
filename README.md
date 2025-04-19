@@ -107,7 +107,24 @@ flight-delay-optimization-dashboard/
 ├── public/
 └── package.json
 ```
+## 📸 Project Screenshots
 
+### Dashboard View
+![Dashboard](./downloads/dashboard.jpeg)
+![Dashboard](./downloads/dashboard-2.jpeg)
+
+
+This screenshot shows the main dashboard used to monitor real-time analytics.
+
+### Flight Scheduling
+![User Profile](./downloads/flight-schedule.jpeg)
+
+Displays the user’s detailed info and account settings.
+
+### Delay Predictions
+![User Profile](./downloads/delay-predictions.jpeg)
+
+Displays the user’s detailed info and account settings.
 ## Contributing
 
 1. Fork the repository
