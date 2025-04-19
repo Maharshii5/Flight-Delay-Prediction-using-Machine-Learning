@@ -39,7 +39,7 @@ A modern, AI-powered flight operations management system built with React and Te
 ## Screenshots
 
 ### Dashboard
-![Dashboard](https://images.pexels.com/photos/1098614/pexels-photo-1098614.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)
+![Dashboard](./images/dashboard.jpeg)
 *Main dashboard showing flight delay analytics*
 
 ### Weather Analysis
