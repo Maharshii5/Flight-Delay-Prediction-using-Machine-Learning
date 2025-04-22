@@ -143,3 +143,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - UI components styled with [Tailwind CSS](https://tailwindcss.com)
 - Charts powered by [Recharts](https://recharts.org)
 ## Temporarily hosted at :"https://elaborate-daifuku-eb5915.netlify.app/"
+
+## ~ MAHARSHI
